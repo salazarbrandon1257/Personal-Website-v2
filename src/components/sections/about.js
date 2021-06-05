@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript', 'PHP', 'SQL', 'Java'];
+  const skills = ['JavaScript', 'PHP', 'SQL', 'Java', 'React', 'HTML/CSS'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,23 +135,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Brandon and I am passionate about using math and coding to solve
+              problems. Having graduated with a degree in mathematics, I am a self-taught programmer
+              interested in multiple parts of Software Engineering and Computer Science!
             </p>
 
             <p>
-              Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              For my work experience, I've had the opportunity of working at a medium-sized{' '}
+              <a href="https://www.paycom.com/">payroll company</a>, and as a mathematics tutor and
+              teaching assistant at a{' '}
+              <a href="https://www.utdallas.edu/">top university in texas</a>. I also have done some
+              consulting and private tutoring on the side.
             </p>
-
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 

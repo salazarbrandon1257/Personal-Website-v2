@@ -30,7 +30,7 @@ const StyledHeroSection = styled.section`
 
   h3 {
     margin-top: 10px;
-    color: var(--slate);
+    color: var(--light-slate);
     line-height: 0.9;
   }
 
@@ -60,10 +60,10 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Brandon Salazar.</h2>;
-  const three = <h3 className="big-heading">I love solving problems.</h3>;
+  const three = <h3 className="big-heading">Software Developer.</h3>;
   const four = (
     <p>
-      I'm a Dallas-based software developer looking to make an impact in the world. Currently, I'm a
+      I'm a Dallas-based software developer looking to make an impact on the world. Currently, I'm a
       developer at <a href="https://www.paycom.com/">Paycom</a> focused on building accessible,
       human-centered products.
     </p>
