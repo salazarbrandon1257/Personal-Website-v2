@@ -1,12 +1,10 @@
 ---
 date: '2018-05-01'
 title: 'Data Analysis on U.S Flight Record Dataset'
-github: ''
-external: 'https://blistabloc.com/'
+github: 'https://github.com/salazarbrandon1257/U.S-Flight-Record-Dataset-Analysis'
+external: ''
 tech:
-  - WordPress
-  - Timber
-  - WooCommerce
+  - R
 company: 'Scout'
 showInProjects: true
 ---

@@ -1,8 +1,8 @@
 ---
 date: '2020-03-27'
 title: 'Investing Growth App'
-github: 'https://github.com/bchiang7/time-to-have-more-fun'
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+github: 'https://github.com/salazarbrandon1257/Android-Wealth-Application'
+external: ''
 tech:
   - Java
   - Android Studio

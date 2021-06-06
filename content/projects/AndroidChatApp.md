@@ -1,11 +1,12 @@
 ---
 date: '2018-10-01'
 title: 'Android Chat App'
-github: ''
-external: 'https://www.flagshippioneering.com/'
+github: 'https://github.com/salazarbrandon1257/Android-Chat-Application'
+external: ''
 tech:
-  - Craft CMS
-  - Chart.js
+  - Java
+  - Android Studio
+  - Firebase
 company: 'Upstatement'
 showInProjects: true
 ---

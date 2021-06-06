@@ -1,13 +1,11 @@
 ---
 date: '2016-04-01'
 title: 'Data Scraping and Analysis on E-commerce Website'
-github: 'https://github.com/bchiang7/WebDevSpring2016/tree/master/public/project'
+github: 'https://github.com/salazarbrandon1257/Data-Scraping-and-Analysis-'
 external: ''
 tech:
-  - Angular
-  - Node
-  - Express
-  - MongoDB
+  - Python
+  - bs4
 company: 'Northeastern'
 showInProjects: true
 ---

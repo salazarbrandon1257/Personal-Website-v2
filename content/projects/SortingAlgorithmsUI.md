@@ -1,12 +1,10 @@
 ---
 date: '2017-12-01'
 title: 'Sorting Algorithms Visualizer and UI'
-github: ''
-external: 'https://tools.applemusic.com/en-us'
+github: 'https://github.com/salazarbrandon1257/sorting-visualizer'
+external: ''
 tech:
-  - MusicKit.js
-  - JS
-  - SCSS
+  - React
 company: 'Apple'
 showInProjects: true
 ---
