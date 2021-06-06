@@ -3,12 +3,8 @@ module.exports = {
 
   socialMedia: [
     {
-      name: 'Call',
-      url: 'https://github.com/salazarbrandon1257',
-    },
-    {
       name: 'Mail',
-      url: 'https://github.com/salazarbrandon1257',
+      url: 'mailto:brandon.o.salazar@gmail.com',
     },
     {
       name: 'GitHub',

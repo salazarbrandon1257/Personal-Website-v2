@@ -1,7 +1,7 @@
 ---
 date: '2017-12-21'
 title: 'Teaching Assistant'
-company: 'University of Texas at Dallas'
+company: 'UTD'
 location: 'Richardson, TX'
 range: 'Sep 2019 - Apr 2020'
 url: 'https://www.utdallas.edu/'

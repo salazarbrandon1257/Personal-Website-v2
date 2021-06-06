@@ -1,7 +1,7 @@
 ---
 date: '2018-04-01'
 title: 'Mathematics Tutor'
-company: 'University of Texas at Dallas'
+company: 'UTD'
 location: 'Richardson, TX'
 range: 'Sep 2017 - Dec 2020'
 url: 'https://www.utdallas.edu/'
