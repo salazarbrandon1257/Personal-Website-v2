@@ -3,7 +3,7 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Brandon Salazar',
-    description: 'Brittany Chiang is a software engineer looking to make an impact on the world.',
+    description: 'Brandon Salazar is a software engineer looking to make an impact on the world.',
     siteUrl: 'https://brandonsalazar.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
@@ -151,7 +151,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingId: 'G-VRGL3QY858',
+        head: true,
       },
     },
   ],
