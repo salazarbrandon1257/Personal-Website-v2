@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { isMobile } from 'react-device-detect';
 
 const StyledProjectsSection = styled.section`
   display: flex;
@@ -27,12 +28,16 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: ${isMobile
+    ? 'repeat(auto-fill, minmax(300px, 1fr));'
+    : 'repeat(3, minmax(300px, 1fr));'};
     grid-gap: 15px;
     position: relative;
 
     @media (max-width: 1080px) {
-      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      grid-template-columns: ${isMobile
+    ? 'repeat(auto-fill, minmax(250px, 1fr));'
+    : 'repeat(3, minmax(250px, 1fr));'};
     }
   }
 
@@ -163,6 +168,21 @@ const StyledProject = styled.li`
   }
 `;
 
+// if(!isMobile) {
+//   console.log("is not mobile");
+
+//   const StyledProjectsSection = styled.section`
+//   .projects-grid {
+
+//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+//     @media (max-width: 1080px) {
+//       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+//     }
+//   }
+
+// `;};
+
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -222,12 +242,17 @@ const Projects = () => {
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link">
+                <a href={github} aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
                   <Icon name="GitHub" />
                 </a>
               )}
               {external && (
-                <a href={external} aria-label="External Link" className="external">
+                <a
+                  href={external}
+                  aria-label="External Link"
+                  className="external"
+                  rel="noopener noreferrer"
+                  target="_blank">
                   <Icon name="External" />
                 </a>
               )}
@@ -235,7 +260,9 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={github}>{title}</a>
+            <a href={github} rel="noopener noreferrer" target="_blank">
+              {title}
+            </a>
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
