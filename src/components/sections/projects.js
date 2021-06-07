@@ -168,21 +168,6 @@ const StyledProject = styled.li`
   }
 `;
 
-// if(!isMobile) {
-//   console.log("is not mobile");
-
-//   const StyledProjectsSection = styled.section`
-//   .projects-grid {
-
-//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-//     @media (max-width: 1080px) {
-//       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-//     }
-//   }
-
-// `;};
-
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
