@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { isMobile } from 'react-device-detect';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -289,7 +290,9 @@ const Jobs = () => {
                       <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
-                          {company}
+                          {company === 'UTD' && !isMobile
+                            ? 'University of Texas at Dallas'
+                            : company}
                         </a>
                       </span>
                     </h3>
