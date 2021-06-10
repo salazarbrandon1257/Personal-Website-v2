@@ -64,8 +64,11 @@ const Hero = () => {
   const four = (
     <p>
       I'm a Dallas-based software developer looking to make an impact on the world. Currently, I'm a
-      developer at <a href="https://www.paycom.com/">Paycom</a> focused on building accessible,
-      human-centered products.
+      developer at{' '}
+      <a href="https://www.paycom.com/" rel="noopener noreferrer" target="_blank">
+        Paycom
+      </a>{' '}
+      focused on building accessible, human-centered products.
     </p>
   );
   const five = (
