@@ -233,7 +233,7 @@ const Projects = () => {
               )}
               {external && (
                 <a
-                  href={external}
+                  href={external === '' ? github : external}
                   aria-label="External Link"
                   className="external"
                   rel="noopener noreferrer"
@@ -245,7 +245,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={github} rel="noopener noreferrer" target="_blank">
+            <a href={external === '' ? github : external} rel="noopener noreferrer" target="_blank">
               {title}
             </a>
           </h3>
