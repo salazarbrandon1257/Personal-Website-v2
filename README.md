@@ -13,7 +13,7 @@
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/kind-haibt-5f449a/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/4f216d40-d909-4cae-bc1c-24b79419cd5d/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
