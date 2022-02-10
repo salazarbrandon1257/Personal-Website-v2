@@ -12,7 +12,7 @@
   <a href="https://github.com/salazarbrandon1257/personal-website" target="_blank">v1</a>
 </p>
 <p align="center">
-  <a href="https://app.netlify.com/sites/kind-haibt-5f449a/deploys" target="_blank">
+  <a href="https://app.netlify.com/sites/brandonsalazar/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/4f216d40-d909-4cae-bc1c-24b79419cd5d/deploy-status" alt="Netlify Status" />
   </a>
 </p>
