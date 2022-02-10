@@ -5,7 +5,7 @@ module.exports = {
     title: 'Brandon Salazar',
     description: 'Brandon Salazar is a software engineer looking to make an impact on the world.',
     siteUrl: 'https://brandonsalazar.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
   plugins: [
