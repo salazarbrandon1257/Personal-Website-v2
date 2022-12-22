@@ -243,6 +243,33 @@ const Jobs = () => {
     }
   };
 
+  function styledTabPanel(i, title, url, company, range, html) {
+    return (
+      <StyledTabPanel
+        id={`panel-${i}`}
+        role="tabpanel"
+        tabIndex={activeTabId === i ? '0' : '-1'}
+        aria-labelledby={`tab-${i}`}
+        aria-hidden={activeTabId !== i}
+        hidden={activeTabId !== i}
+      >
+        <h3>
+          <span>{title}</span>
+          <span className="company">
+            &nbsp;@&nbsp;
+            <a href={url} className="inline-link">
+              {company === 'UTD' && !isMobile ? 'University of Texas at Dallas' : company}
+            </a>
+          </span>
+        </h3>
+
+        <p className="range">{range}</p>
+
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </StyledTabPanel>
+    );
+  }
+
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
       <h2 className="numbered-heading">Where I’ve Worked</h2>
@@ -262,7 +289,8 @@ const Jobs = () => {
                   role="tab"
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
+                  aria-controls={`panel-${i}`}
+                >
                   <span>{company}</span>
                 </StyledTabButton>
               );
@@ -278,29 +306,11 @@ const Jobs = () => {
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
-                  <StyledTabPanel
-                    id={`panel-${i}`}
-                    role="tabpanel"
-                    tabIndex={activeTabId === i ? '0' : '-1'}
-                    aria-labelledby={`tab-${i}`}
-                    aria-hidden={activeTabId !== i}
-                    hidden={activeTabId !== i}>
-                    <h3>
-                      <span>{title}</span>
-                      <span className="company">
-                        &nbsp;@&nbsp;
-                        <a href={url} className="inline-link">
-                          {company === 'UTD' && !isMobile
-                            ? 'University of Texas at Dallas'
-                            : company}
-                        </a>
-                      </span>
-                    </h3>
-
-                    <p className="range">{range}</p>
-
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
-                  </StyledTabPanel>
+                  <div className="inner2">
+                    {styledTabPanel(i, title, url, company, range, html)}
+                    {i}
+                    {i === 1 ? styledTabPanel(i + 1, title, url, company, range, html) : null}
+                  </div>
                 </CSSTransition>
               );
             })}
