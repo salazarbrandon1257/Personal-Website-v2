@@ -7,8 +7,8 @@ range: 'Mar 2022 – Present'
 url: 'https://collectivemedical.com/'
 ---
 
-- Complex integrations with distributed systems
-- Assure availability and scalability of solutions
-- Support peers in implementing new software solutions
-- Translate business requirements into real-world technology solutions
+- Create multiple RESTful API for Java back-end services and Angular front-end applications
+- Maintain multiple Java libraries and services with complex integrations and efficient code
+- Implement, create, and debug multiple Angular components
+- Manage multiple databases, and create Stored Procedures to archive over 20 million rows of data
 - Languages: Java, JavaScript(Angular), MySQL
